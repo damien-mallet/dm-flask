@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Homepage</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='Responsive_Navigation_Menu.css') }}">
+
+<!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
+
+   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+
+</head>
+<body>
+	<header class="header">
+
+		   <a href="#" class="logo"><span>Capsulify</span></a>
+
+		   <nav class="navbar">
+<!-- 		      <a href="#home">home</a> -->
+		      <a href="#about">about</a>
+		      <a href="#services">services</a>
+<!-- 		      <a href="#projects">projects</a> -->
+		      <a href="#pricing">pricing</a>
+		      <a href="#contact">contact</a>
+<!-- 		      <a href="#blogs">blogs</a> -->
+		   </nav>
+
+		   <div class="icons">
+		      <div id="menu-btn" class="fas fa-bars"></div>
+		      <!-- <div id="info-btn" class="fas fa-info-circle"></div> -->
+		      <!-- <div id="search-btn" class="fas fa-search"></div> -->
+		      <a href="/account"><div id="login-btn" class="fas fa-user"></div></a>
+		   </div>
+
+		   <form action="" class="search-form">
+		      <input type="search" name="" placeholder="search here..." id="search-box">
+		      <label for="search-box" class="fas fa-search"></label>
+		   </form>
+
+		   <form action="" class="login-form">
+		      <h3>login form</h3>
+		      <input type="email" placeholder="enter your email" class="box">
+		      <input type="password" placeholder="enter your password" class="box">
+		      <div class="flex">
+		         <input type="checkbox" name="" id="remember-me">
+		         <label for="remember-me">remember me</label>
+		         <a href="#">forgot password?</a>
+		      </div>
+		      <input type="submit" value="login now" class="btn">
+		      <p>don't have an account <a href="#">create one!</a></p>
+		   </form>
+
+	</header>
+
+	<div class="contact-info">
+
+		   <div id="close-contact-info" class="fas fa-times"></div>
+
+		   <div class="info">
+		      <i class="fas fa-phone"></i>
+		      <h3>phone number</h3>
+		      <p>+123-456-7890</p>
+		      <p>+111-222-3333</p>
+		   </div>
+
+		   <div class="info">
+		      <i class="fas fa-envelope"></i>
+		      <h3>email address</h3>
+		      <p>shaikhanas@gmail.com</p>
+		      <p>anasbhai@gmail.com</p>
+		   </div>
+
+		   <div class="info">
+		      <i class="fas fa-map-marker-alt"></i>
+		      <h3>office address</h3>
+		      <p>mumbai, india - 400104</p>
+		   </div>
+
+		   <div class="share">
+		      <a href="#" class="fab fa-facebook-f"></a>
+		      <a href="#" class="fab fa-twitter"></a>
+		      <a href="#" class="fab fa-instagram"></a>
+		      <a href="#" class="fab fa-linkedin"></a>
+		   </div>
+
+	</div>
+
+	<section style="padding-bottom: : 3%" >
+		{% block content %}
+
+
+		{% endblock content %}
+
+
+	</section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+	<script src="{{ url_for('static', filename='script.js') }}"></script>
+	<script src="{{ url_for('static', filename='Responsive_Navigation_Menu.js') }}"></script>
+
+	<script>
+
+lightGallery(document.querySelector('.projects .box-container'));
+
+</script>
+
+</body>
+</html>

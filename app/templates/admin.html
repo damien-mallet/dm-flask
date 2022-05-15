@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='admin.css') }}">
+    
+	<meta charset="utf-8">
+	<title>Admin</title>
+</head>
+
+<body>
+    <nav>
+        <div class="adminNav">Admin Page</div>
+    </nav>
+
+<div class="table-design">
+    <table class="admin-table">
+        <thead>
+        <tr>
+            <th>File</th>
+            <th>Name</th>
+            <th></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>freezer.jpg</td>
+            <td>Big Freezer</td>
+            <td><input type="checkbox" unchecked></td>
+        </tr>
+        <tr>
+          <td>barbecue.jpg</td>
+          <td>Barbecue</td>
+          <td><input type="checkbox" unchecked></td>
+      </tr>
+        <tbody>
+    </table>
+</div>
+</body>
+</html>

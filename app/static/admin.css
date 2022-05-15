@@ -1,0 +1,77 @@
+
+body{
+  font-family: Helvetica;
+  -webkit-font-smoothing: antialiased;
+  margin:0;
+}
+h2{
+  text-align: center;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: white;
+  padding: 30px 0;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+table th:first-child{
+  border-radius:10px 0px 0 0px;
+}
+
+table th:last-child{
+  border-radius:0px 10px 0 0px;
+}
+
+thead {
+  border-radius: 50px;
+  background: rgb(100,124,71);
+  background: linear-gradient(90deg, rgba(100,124,71,1) 0%, rgba(0,212,255,1) 99%);
+  height: 60px;
+}
+
+.table-design{
+  margin: 10px 70px 70px;
+  box-shadow: 0px 35px 50px rgba( 0, 0, 0, 0.2 );
+}
+
+.admin-table {
+  margin-top: 6%;
+  font-size: 15px;
+  font-weight: normal;
+  width: 100%;
+  max-width: 100%;
+  padding: 10%;
+  white-space: nowrap;
+  background-color: white;
+  border-collapse: collapse;
+}
+
+.admin-table td, .admin-table th {
+  text-align: center;
+  padding: 8px;
+}
+
+.admin-table td {
+  border-right: 1px solid #f8f8f8;
+  font-size: 12px;
+}
+
+.admin-table thead th {
+  color: #ffffff;
+}
+
+nav{
+  background-color: rgb(230, 230, 230);
+  margin:0;
+}
+
+.adminNav{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 28px;
+  line-height: 80px;
+  padding: 0 3%;
+  font-weight: bold;
+}

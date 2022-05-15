@@ -1,0 +1,254 @@
+{% include 'main.html' %}
+    {% block content %}
+    
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+   <div class="swiper home-slider">
+
+      <div class="swiper-wrapper">
+
+         <section class="swiper-slide slide" style="background-image: url({{ url_for('static', filename='images/spacex.jpg') }}) no-repeat;">
+            <div class="content">
+               <h3>Leave A Footprint!</h3>
+               <p>A picture is worth thousand words, SAVE IT!</p>
+               <a href="#about" class="btn">get started</a>
+            </div>
+         </section>
+
+         <section class="swiper-slide slide" style="background: {{ url_for('static', filename='images/home-slide-2.jpg') }} no-repeat;">
+            <div class="content">
+               <h3>making dream come to life</h3>
+               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur beatae iusto pariatur laborum magnam eos!</p>
+               <a href="#about" class="btn">get started</a>
+            </div>
+         </section>
+
+         <section class="swiper-slide slide" style="background: {{ url_for('static', filename='images/home-slide-3.jpg') }} no-repeat;">
+            <div class="content">
+               <h3>from concept to creation</h3>
+               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur beatae iusto pariatur laborum magnam eos!</p>
+               <a href="#about" class="btn">get started</a>
+            </div>
+         </section>
+
+<!--       </div>
+
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+
+   </div> -->
+
+</section>
+
+<section class="about" id="about">
+
+   <h1 class="heading"> about us </h1>
+
+   <div class="row">
+
+      <div class="video">
+         <video src="{{ url_for('static', filename='images/rocket.mp4') }}" loop muted autoplay></video>
+      </div>
+
+      <div class="content">
+         <h3>We will provide you the best work which you dreamt for!</h3>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas et vero mollitia nemo corporis consequatur aspernatur distinctio dignissimos velit nam.</p>
+         <a href="#services" class="btn">read more</a>
+      </div>
+
+   </div>
+
+   <div class="box-container">
+
+      <div class="box">
+         <h3>5+</h3>
+         <p>years of experience</p>
+      </div>
+
+      <div class="box">
+         <h3>1500+</h3>
+         <p>capsules launched</p>
+      </div>
+
+      <div class="box">
+         <h3>900+</h3>
+         <p>satiesfied clients</p>
+      </div>
+
+      <div class="box">
+         <h3>450+</h3>
+         <p>active workers</p>
+      </div>
+
+   </div>
+
+</section>
+
+<!-- services section starts  -->
+
+<section class="services" id="services">
+
+   <h1 class="heading"> our services </h1>
+
+   <div class="box-container">
+
+      <div class="box">
+         <img src="{{ url_for('static', filename='images/service-5.png') }}">
+         <h3>Innovative Ideas</h3>
+         <p>Our team does its best to meet customer satisfaction.</p>
+      </div>
+
+      <div class="box">
+         <img src="{{ url_for('static', filename='images/service-1.png') }}">
+         <h3>High-end Infrastructure</h3>
+         <p>Our infrastructures are equipped with the latest technologies.</p>
+      </div>
+
+      <div class="box">
+         <img src="{{ url_for('static', filename='images/service-8.png') }}">
+         <h3>Customer Service</h3>
+         <p>We have a high rating of customer satisfaction. </p>
+      </div>
+
+      <div class="box">
+         <img src="{{ url_for('static', filename='images/service-4.png') }}">
+         <h3>Eco-Friendly</h3>
+         <p>We are using eco-friendly materials as much as we can to contribute in helping our environment.</p>
+      </div>
+      
+   </div>
+
+</section>
+
+<!-- services section ends -->
+
+<!-- projects section starts  -->
+
+<section class="projects" id="projects">
+
+   <h1 class="heading"> our destinations </h1>
+
+   <div class="box-container">
+
+      <a href="/earth" class="box">
+         <div class="image">
+            <img src="{{ url_for('static', filename='images/nasa-vhSz50AaFAs-unsplash.jpg') }}" alt="">
+         </div>
+         <div class="content">
+            <div class="info">
+               <h3>Earth</h3>
+               <p>Underground, Underwater, Orbital</p>
+            </div>
+            <i class="fas fa-plus"></i>
+         </div>
+      </a>
+
+      <a href="/moon" class="box">
+         <div class="image">
+            <img src="{{ url_for('static', filename='images/moon.jpg') }}" alt="">
+         </div>
+         <div class="content">
+            <div class="info">
+               <h3>Moon</h3>
+               <p>Underground, Orbital</p>
+            </div>
+            <i class="fas fa-plus"></i>
+         </div>
+      </a>
+
+      <a href="mars" class="box">
+         <div class="image">
+            <img src="{{ url_for('static', filename='images/nasa-N3BQHYOVq5E-unsplash.jpg') }}" alt="">
+         </div>
+         <div class="content">
+            <div class="info">
+               <h3>Mars</h3>
+               <p>Underground, Orbital</p>
+            </div>
+            <i class="fas fa-plus"></i>
+         </div>
+      </a>
+
+   </div>
+
+</section>
+
+<!-- projects section ends -->
+
+<!-- pricing section starts  -->
+<section class="price">
+<div class="price_header">
+      <h1 class="heading"> Pricing </h1>
+      <div class="toggle_2">
+        <label>Annually </label>
+        <div class="toggle-btn-lol">
+          <input type="checkbox" class="checkbox" id="checkbox" />
+          <label class="sub" id="sub" for="checkbox">
+            <div class="circle"></div>
+          </label>
+        </div>
+        <label> Monthly</label>
+      </div>
+    </div>
+
+    <div class="Price_cards">
+      <div class="card_02 shadow">
+        <ul>
+          <li class="pack">Basic</li>
+          <li id="basic" class="price bottom-bar">&dollar;199.99</li>
+          <li class="bottom-bar">500 GB Storage</li>
+          <li class="bottom-bar">2 Users Allowed</li>
+          <li class="bottom-bar">Send up to 3 GB</li>
+          <li><button class="btnp">Learn More</button></li>
+        </ul>
+      </div>
+      <div class="card active">
+        <ul>
+          <li class="pack">Professional</li>
+          <li id="professional" class="price bottom-bar">&dollar;249.99</li>
+          <li class="bottom-bar">1 TB Storage</li>
+          <li class="bottom-bar">5 Users Allowed</li>
+          <li class="bottom-bar">Send up to 10 GB</li>
+          <li><button class="btnp active-btn">Learn More</button></li>
+        </ul>
+      </div>
+      <div class="card shadow">
+        <ul>
+          <li class="pack">Master</li>
+          <li id="master" class="price bottom-bar">&dollar;399.99</li>
+          <li class="bottom-bar">2 TB Storage</li>
+          <li class="bottom-bar">10 Users Allowed</li>
+          <li class="bottom-bar">Send up to 20 GB</li>
+          <li><button class="btnp">Learn More</button></li>
+        </ul>
+      </div>
+
+    </div>
+
+
+    <script>
+
+      const checkbox = document.getElementById("checkbox");
+      const professional = document.getElementById("professional");
+      const master = document.getElementById("master");
+      const basic = document.getElementById("basic");
+
+      checkbox.addEventListener("click", () => {
+        basic.textContent = basic.textContent === "$199.99" ? "$19.99" : "$199.99";
+        professional.textContent =
+          professional.textContent === "$249.99" ? "$24.99 " : "$249.99";
+        master.textContent = master.textContent === "$399.99" ? "$39.99" : "$399.99";
+      });
+
+    </script>
+</section>
+
+<!-- pricing section ends -->
+
+
+
+
+<!-- home section ends -->
+{% endblock content %}
